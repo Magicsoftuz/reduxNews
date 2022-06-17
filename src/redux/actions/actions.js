@@ -19,7 +19,7 @@ export const selectAction = (id) => {
 };
 
 export const getPost = () => async (dispatch, getState) => {
-  const posts = await getData(`posts?userId=1`);
+  const posts = await getData(`posts?userId=${getState().id}`);
   const obj = { type: GET_POST, payload: posts.data };
   dispatch(obj);
 };

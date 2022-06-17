@@ -8,8 +8,8 @@ import { PostListContainer } from "../redux/containers/PostListContainer";
 const App = () => {
   return (
     <div className="container">
-      <PostListContainer />
       <UserListContainer />
+      <PostListContainer />
     </div>
   );
 };

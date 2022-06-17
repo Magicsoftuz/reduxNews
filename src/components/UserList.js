@@ -7,7 +7,7 @@ const UserList = (props) => {
     if (!props.users.length) {
       return;
     }
-    return props.users.map((val) => {
+    return props.users[0].map((val) => {
       console.log(val);
       return (
         <div style={{ border: "5px solid red" }}>
